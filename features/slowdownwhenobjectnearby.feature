@@ -1,5 +1,5 @@
 Feature: Slow down when object nearby
-When the sensor detects an object in the near field of the sensor range, reduce the speed 
+If the sensor detects an object in the near field of the sensor range, reduce the speed 
 by 1 m/s with a zero bound.
 
 Background:
