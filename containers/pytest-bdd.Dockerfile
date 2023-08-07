@@ -1,8 +1,10 @@
-FROM python:3.11.4 
+# development environment for pytest-bdd
+FROM python:3.11.4-slim
+VOLUME /var/code
 RUN pip install pytest
 RUN pip install pytest-bdd
-RUN mkdir /var/code
 WORKDIR /var/code
-RUN apt-get install git -y
-RUN git clone https://github.com/FeynmanFan/pytest-bdd
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+RUN apt-get update && apt-get install git -y
+
+#hack to keep container alive
+ENTRYPOINT sleep infinity
