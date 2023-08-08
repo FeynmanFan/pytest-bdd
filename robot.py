@@ -6,5 +6,7 @@ class robot:
 
     def motionEvaluation(self, nearfieldDetected = False):
         # do a bunch of stuff that is unrelated to the current issue
+        if nearfieldDetected:
+            self.velocity.speed -= 1;
             pass            
     
