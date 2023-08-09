@@ -1,6 +1,8 @@
 from velocity import velocity
 import pytest
 
+pytestmark = pytest.mark.framework
+
 def test_createSimpleVelocity():
     vel = velocity(90, 10) # due east at ten meters/sec
 
@@ -13,8 +15,6 @@ def test_createVelocityWithNegativeSpeed():
     
     assert str(e.value) == "Speed cannot be negative"
     
-        
-
 def test_createVelocityWithCompoundHeading():
     vel = velocity(405, 10) # northwest at ten meters / sec
 
