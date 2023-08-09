@@ -1,5 +1,5 @@
 import pytest
-from pytest_bdd import scenario, given, when, then
+from pytest_bdd import scenario, given, when, then, parsers
 from robot import robot
 from velocity import velocity
 
@@ -20,16 +20,18 @@ def test_slowdown():
 	return
     
 @given("the near field sensor detects an object", target_fixture="theNearFieldSensor")
-@given("the robot is traveling at 10m/s")
-def robot_travelling(theNearFieldSensor, the_robot):
+def sensor_fired(theNearFieldSensor, ):
 	theNearFieldSensor = True
-	the_robot.velocity.speed = 10
 	return theNearFieldSensor
+
+@given(parsers.cfparse("the robot is traveling at {initialSpeed: d}m/s"))
+def robot_travelling(the_robot, initialSpeed):
+	the_robot.velocity.speed = initialSpeed
 
 @when("motion evaluation fires")
 def robotMotionFired(theNearFieldSensor, the_robot):
 	the_robot.motionEvaluation(theNearFieldSensor)
 
-@then("speed should be 9m/s")
-def robotSpeedSlower(the_robot):
-	assert(the_robot.velocity.speed == 9)
+@then(parsers.cfparse("speed should be {finalSpeed: d}m/s"))
+def robotSpeedSlower(the_robot, finalSpeed):
+	assert(the_robot.velocity.speed == finalSpeed)
