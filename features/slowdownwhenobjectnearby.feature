@@ -5,17 +5,15 @@ by 1 m/s with a zero bound.
 Background:
 	Given the near field sensor detects an object
 
-Scenario: Robot detects object while in motion
-	Given the robot is traveling at 10m/s
+Scenario Outline: Robot detects object while in motion
+	Given the robot is traveling at <initialSpeed>m/s
 	When motion evaluation fires
-	Then speed should be 9m/s
-	
-Scenario: Robot detects object while in motion at any speed
-	Given the robot is moving at a speed > 0
-	When motion evaluation fires
-	Then speed should be decreased by one meter per second
-	
-Scenario: Robot detects object while at rest
-	Given the robot is moving at a speed == 0
-	When motion evaluation fires
-	Then the robot should remain at rest
+	Then speed should be <finalSpeed>m/s
+
+	Examples: speeds
+	|	initialSpeed	|	finalSpeed	|
+	|	10				|	9			|
+	|	38				|	37			|
+	|	1000			|	999			|
+	|	22				|	21			|
+	|	0				|	0			|
