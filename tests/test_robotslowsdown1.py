@@ -19,16 +19,16 @@ def theNearFieldSensor():
 @scenario("../features/slowdownwhenobjectnearby.feature", "Robot detects object while in motion")
 def test_slowdown():
 	return
-    
+	
 @given("the near field sensor detects an object", target_fixture="theNearFieldSensor")
 def sensor_fired(theNearFieldSensor):
-	print('nearfieldsensor' + '\t\t' + str(time.time()))
+	#print('nearfieldsensor' + '\t\t' + str(time.time()))
 	theNearFieldSensor = True
 	return theNearFieldSensor
 
 @given(parsers.cfparse("the robot is traveling at {initialSpeed: d}m/s"))
 def robot_travelling(the_robot, initialSpeed):
-	print('initialSpeed' + '\t\t' + str(time.time()))
+	#print('initialSpeed' + '\t\t' + str(time.time()))
 	the_robot.velocity.speed = initialSpeed
 
 @when("motion evaluation fires")
