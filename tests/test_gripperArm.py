@@ -16,6 +16,7 @@ def test_rotateArmAtZeroInclination(the_robot):
 
 def test_rotateArmAtFortyDegreeInclination(the_robot):
     the_robot.gripperArm.inclination = 40
+    the_robot.gripperArm.close()
     with pytest.raises(Exception) as e:
         the_robot.gripperArm.rotate(10)
 
