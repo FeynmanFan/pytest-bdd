@@ -1,7 +1,7 @@
 class gripperArm:
     INCLINATION_ROTATION_ANGLE_LIMIT = 25
 
-    def __init__(self, inclination = 0, errorState = "", gripState = "open"):
+    def __init__(self, inclination = 0, errorState = "None", gripState = "open"):
         self._inclination = inclination
         self._errorState = errorState
         self._gripState = gripState
@@ -50,9 +50,10 @@ class gripperArm:
         self.gripState = "open"
 
     def rotate(self, degrees):
-        if (self.inclination > self.INCLINATION_ROTATION_ANGLE_LIMIT and self.gripState == "closed"):
-            self.errorState = "INCLINATION_ROTATION_ANGLE_LIMIT"
-            raise Exception("INCLINATION_ROTATION_ANGLE_LIMIT exceeded in rotation")
+        if (self.inclination >= self.INCLINATION_ROTATION_ANGLE_LIMIT and self.gripState == "closed"):
+            self.autoOrient()
+            #self.errorState = "INCLINATION_ROTATION_ANGLE_LIMIT"
+            #raise Exception("INCLINATION_ROTATION_ANGLE_LIMIT exceeded in rotation")
         # rotation logic
 
     def autoOrient(self):
