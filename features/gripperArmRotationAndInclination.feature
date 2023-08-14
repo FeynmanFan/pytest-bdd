@@ -13,3 +13,16 @@ Scenario Outline: The rotate feature is called when the arm is closed and with d
     |   25          |
     |   26          |
     |   90          |
+
+Scenario Outline: The rotate feature is called when the arm is open and with different inclination values           
+    Given the gripper arm inclination is <inclination>
+    And the gripstate is 'open'
+    When the rotate feature is called
+    Then the auto-orient function is not called
+    And the errorState is 'None'
+
+    Examples: 
+    |   inclination |
+    |   25          |
+    |   26          |
+    |   90          |

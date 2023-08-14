@@ -13,6 +13,10 @@ def the_robot():
 def test_inclination():
 	return
 
+@scenario("../features/gripperArmRotationAndInclination.feature", "The rotate feature is called when the arm is open and with different inclination values")
+def test_armopen():
+	return
+
 @given(parsers.parse("the gripper arm inclination is {inclination: d}"))
 def setInclination(the_robot, inclination):
 	the_robot.gripperArm.inclination = inclination
@@ -21,6 +25,10 @@ def setInclination(the_robot, inclination):
 def setClosed(the_robot):
 	the_robot.gripperArm.close()
 	
+@given("the gripstate is 'open'")
+def setOpen(the_robot):
+	the_robot.gripperArm.open()
+	
 @when("the rotate feature is called")
 def callRotate(the_robot):
 	the_robot.gripperArm.rotate(1)
@@ -28,6 +36,10 @@ def callRotate(the_robot):
 @then("the auto-orient function is called")
 def autoOrientWasCalled(the_robot):
 	assert the_robot.gripperArm._autoOriented == True
+
+@then("the auto-orient function is not called")
+def autoOrientWasNotCalled(the_robot):
+	assert the_robot.gripperArm._autoOriented == False
 
 @then("the errorState is 'None'")
 def errorStateIsNone(the_robot):
