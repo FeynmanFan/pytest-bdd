@@ -1,4 +1,3 @@
-import time
 import pytest
 from pytest_bdd import scenario, given, when, then, parsers
 from robot import robot

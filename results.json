@@ -1,0 +1,1324 @@
+[
+  {
+    "keyword": "Feature",
+    "uri": "tests\\../features/gripperArmRotationAndInclination.feature",
+    "name": "when the rotate feature is called when the inclination of the gripper arm is 25 degrees or greater and the grip state is closed or closing, the auto-orient function of the gripper will be called and no error state will be populated",
+    "id": "tests\\../features/gripperarmrotationandinclination.feature",
+    "line": 1,
+    "description": "The gripper arm is mounted using a bearing which can rotate as long as the gripping clamp is not oriented at a greater than twenty-five degree angle. Currently, the function will fail and produce an error message that the arm needs to be oriented - this feature will implement calling the auto-orient function to make that unnecessary.",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "id": "test_inclination[25]",
+        "name": "The rotate feature is called when the arm is closed and with different inclination values",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 25",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 679599
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'closed'",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148399
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152799
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is called",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189200
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 9,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84299
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_inclination[26]",
+        "name": "The rotate feature is called when the arm is closed and with different inclination values",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 26",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 302899
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'closed'",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94200
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72199
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is called",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75899
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 9,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186500
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_inclination[90]",
+        "name": "The rotate feature is called when the arm is closed and with different inclination values",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 90",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 452199
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'closed'",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134800
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77200
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is called",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70999
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 9,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65700
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_armopen[25]",
+        "name": "The rotate feature is called when the arm is open and with different inclination values",
+        "line": 17,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 25",
+            "line": 18,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172000
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'open'",
+            "line": 19,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75199
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 20,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62900
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is not called",
+            "line": 21,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47800
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 22,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65899
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_armopen[26]",
+        "name": "The rotate feature is called when the arm is open and with different inclination values",
+        "line": 17,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 26",
+            "line": 18,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363499
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'open'",
+            "line": 19,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77800
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 20,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44599
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is not called",
+            "line": 21,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42599
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 22,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41299
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_armopen[90]",
+        "name": "The rotate feature is called when the arm is open and with different inclination values",
+        "line": 17,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the gripper arm inclination is 90",
+            "line": 18,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165199
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the gripstate is 'open'",
+            "line": 19,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73100
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the rotate feature is called",
+            "line": 20,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 360500
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the auto-orient function is not called",
+            "line": 21,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79699
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the errorState is 'None'",
+            "line": 22,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "uri": "tests\\../features/matchspecsheet.feature",
+    "name": "Robots' performance envelopes fall within the values advertised in the spec sheet",
+    "id": "tests\\../features/matchspecsheet.feature",
+    "line": 1,
+    "description": "Globomantics provides an industry spec sheet to interested buyers that outlines the capabilities of our products, and it is important to validate that the software meets the specifications.",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[hercules]",
+        "name": "Robots' load values in software match the spec sheet",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model hercules",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192900
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the load meets the spec",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 579254900
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot is loaded",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312400
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the loadState is within the cargo capacity of the model",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75099
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[athena]",
+        "name": "Robots' load values in software match the spec sheet",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model athena",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 241099
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the load meets the spec",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15138000
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot is loaded",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157800
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the loadState is within the cargo capacity of the model",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "fixturefunc = <function loadStateWithinTolerance at 0x0000018F4E21DF80>\nrequest = <FixtureRequest for <Function test_specs[athena]>>\nkwargs = {'the_robot': <athena.athena object at 0x0000018F4E24C550>}\n\n    def call_fixture_func(\n        fixturefunc: \"_FixtureFunc[FixtureValue]\", request: FixtureRequest, kwargs\n    ) -> FixtureValue:\n        if is_generator(fixturefunc):\n            fixturefunc = cast(\n                Callable[..., Generator[FixtureValue, None, None]], fixturefunc\n            )\n            generator = fixturefunc(**kwargs)\n            try:\n                fixture_result = next(generator)\n            except StopIteration:\n                raise ValueError(f\"{request.fixturename} did not yield a value\") from None\n            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)\n            request.addfinalizer(finalizer)\n        else:\n            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)\n>           fixture_result = fixturefunc(**kwargs)\n\nC:\\Python311\\Lib\\site-packages\\_pytest\\fixtures.py:902: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nthe_robot = <athena.athena object at 0x0000018F4E24C550>\n\n    @then(\"the loadState is within the cargo capacity of the model\")\n    def loadStateWithinTolerance(the_robot):\n>       assert the_robot.loadState == \"NORMAL\"\nE       AssertionError: assert 'OVERLOAD' == 'NORMAL'\nE         - NORMAL\nE         + OVERLOAD\n\ntests\\test_matchspecsheet.py:56: AssertionError",
+              "duration": 397800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[hera]",
+        "name": "Robots' load values in software match the spec sheet",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model hera",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173900
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the load meets the spec",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18145699
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot is loaded",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149699
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the loadState is within the cargo capacity of the model",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57599
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[perseus]",
+        "name": "Robots' load values in software match the spec sheet",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model perseus",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202600
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the load meets the spec",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12594199
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot is loaded",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 307000
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the loadState is within the cargo capacity of the model",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "fixturefunc = <function loadStateWithinTolerance at 0x0000018F4E21DF80>\nrequest = <FixtureRequest for <Function test_specs[perseus]>>\nkwargs = {'the_robot': <perseus.perseus object at 0x0000018F4E77ED10>}\n\n    def call_fixture_func(\n        fixturefunc: \"_FixtureFunc[FixtureValue]\", request: FixtureRequest, kwargs\n    ) -> FixtureValue:\n        if is_generator(fixturefunc):\n            fixturefunc = cast(\n                Callable[..., Generator[FixtureValue, None, None]], fixturefunc\n            )\n            generator = fixturefunc(**kwargs)\n            try:\n                fixture_result = next(generator)\n            except StopIteration:\n                raise ValueError(f\"{request.fixturename} did not yield a value\") from None\n            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)\n            request.addfinalizer(finalizer)\n        else:\n            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)\n>           fixture_result = fixturefunc(**kwargs)\n\nC:\\Python311\\Lib\\site-packages\\_pytest\\fixtures.py:902: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nthe_robot = <perseus.perseus object at 0x0000018F4E77ED10>\n\n    @then(\"the loadState is within the cargo capacity of the model\")\n    def loadStateWithinTolerance(the_robot):\n>       assert the_robot.loadState == \"NORMAL\"\nE       AssertionError: assert 'OVERLOAD' == 'NORMAL'\nE         - NORMAL\nE         + OVERLOAD\n\ntests\\test_matchspecsheet.py:56: AssertionError",
+              "duration": 608199
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[mercury]",
+        "name": "Robots' load values in software match the spec sheet",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model mercury",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351099
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "the load meets the spec",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10303899
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot is loaded",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114000
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the loadState is within the cargo capacity of the model",
+            "line": 8,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50799
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "uri": "tests\\../features/robots_have_amperage.feature",
+    "name": "Robots have the proper amperage to power their sensors",
+    "id": "tests\\../features/robots_have_amperage.feature",
+    "line": 1,
+    "description": "In the past, engineers have loaded robots with too many sensors to operate all sensors simultaneously, so this test will validate that the sum of the amperage of the robot's sensors does not exceed the amperage limit for the unit",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[athena]",
+        "name": "The robot has enough amperage to power all sensors",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model athena",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225299
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot performs an amperage check",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100399
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the power state of the unit is ALL",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44999
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[hera]",
+        "name": "The robot has enough amperage to power all sensors",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model hera",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 184900
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot performs an amperage check",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105699
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the power state of the unit is ALL",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60899
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[hercules]",
+        "name": "The robot has enough amperage to power all sensors",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model hercules",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156300
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot performs an amperage check",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61300
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the power state of the unit is ALL",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74399
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[mercury]",
+        "name": "The robot has enough amperage to power all sensors",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model mercury",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183900
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot performs an amperage check",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105899
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the power state of the unit is ALL",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_specs[perseus]",
+        "name": "The robot has enough amperage to power all sensors",
+        "line": 4,
+        "description": "",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the robot is model perseus",
+            "line": 5,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157500
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "the robot performs an amperage check",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53899
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the power state of the unit is ALL",
+            "line": 7,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42999
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "uri": "tests\\../features/slowdownwhenobjectnearby.feature",
+    "name": "Slow down when object nearby",
+    "id": "tests\\../features/slowdownwhenobjectnearby.feature",
+    "line": 1,
+    "description": "If the sensor detects an object in the near field of the sensor range, reduce the speed\nby 1 m/s with a zero bound.",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "id": "test_slowdown[10-9]",
+        "name": "Robot detects object while in motion",
+        "line": 9,
+        "description": "",
+        "tags": [
+          {
+            "name": "factoryfloor",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the near field sensor detects an object",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207100
+            }
+          },
+          {
+            "keyword": "Given",
+            "name": "the robot is traveling at 10m/s",
+            "line": 10,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141699
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "motion evaluation fires",
+            "line": 11,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68200
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "speed should be 9m/s",
+            "line": 12,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71599
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_slowdown[38-37]",
+        "name": "Robot detects object while in motion",
+        "line": 9,
+        "description": "",
+        "tags": [
+          {
+            "name": "factoryfloor",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the near field sensor detects an object",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164699
+            }
+          },
+          {
+            "keyword": "Given",
+            "name": "the robot is traveling at 38m/s",
+            "line": 10,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 189400
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "motion evaluation fires",
+            "line": 11,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58399
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "speed should be 37m/s",
+            "line": 12,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61099
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_slowdown[1000-999]",
+        "name": "Robot detects object while in motion",
+        "line": 9,
+        "description": "",
+        "tags": [
+          {
+            "name": "factoryfloor",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the near field sensor detects an object",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239399
+            }
+          },
+          {
+            "keyword": "Given",
+            "name": "the robot is traveling at 1000m/s",
+            "line": 10,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177599
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "motion evaluation fires",
+            "line": 11,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69400
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "speed should be 999m/s",
+            "line": 12,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 363699
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_slowdown[22-21]",
+        "name": "Robot detects object while in motion",
+        "line": 9,
+        "description": "",
+        "tags": [
+          {
+            "name": "factoryfloor",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the near field sensor detects an object",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180600
+            }
+          },
+          {
+            "keyword": "Given",
+            "name": "the robot is traveling at 22m/s",
+            "line": 10,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176200
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "motion evaluation fires",
+            "line": 11,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55200
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "speed should be 21m/s",
+            "line": 12,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63100
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "id": "test_slowdown[0-0]",
+        "name": "Robot detects object while in motion",
+        "line": 9,
+        "description": "",
+        "tags": [
+          {
+            "name": "factoryfloor",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "the near field sensor detects an object",
+            "line": 6,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171699
+            }
+          },
+          {
+            "keyword": "Given",
+            "name": "the robot is traveling at 0m/s",
+            "line": 10,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134099
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "motion evaluation fires",
+            "line": 11,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46799
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "speed should be 0m/s",
+            "line": 12,
+            "match": {
+              "location": ""
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

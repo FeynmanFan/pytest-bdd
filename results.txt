@@ -1,0 +1,100 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.4, pytest-7.4.0, pluggy-1.2.0
+rootdir: C:\code\pytest-bdd
+configfile: pytest.ini
+plugins: bdd-6.1.1, html-3.2.0, metadata-3.0.0
+collected 27 items
+
+tests\test_gripperArm.py ..                                              [  7%]
+tests\test_gripperArmRotationAndInclination.py ......                    [ 29%]
+tests\test_matchspecsheet.py .F.F.                                       [ 48%]
+tests\test_repo.py .                                                     [ 51%]
+tests\test_robots_have_amperage.py .....                                 [ 70%]
+tests\test_robotslowsdown1.py .....                                      [ 88%]
+tests\test_velocity.py ...                                               [100%]
+
+================================== FAILURES ===================================
+_____________________________ test_specs[athena] ______________________________
+
+fixturefunc = <function loadStateWithinTolerance at 0x00000161F12B9940>
+request = <FixtureRequest for <Function test_specs[athena]>>
+kwargs = {'the_robot': <athena.athena object at 0x00000161F156E8D0>}
+
+    def call_fixture_func(
+        fixturefunc: "_FixtureFunc[FixtureValue]", request: FixtureRequest, kwargs
+    ) -> FixtureValue:
+        if is_generator(fixturefunc):
+            fixturefunc = cast(
+                Callable[..., Generator[FixtureValue, None, None]], fixturefunc
+            )
+            generator = fixturefunc(**kwargs)
+            try:
+                fixture_result = next(generator)
+            except StopIteration:
+                raise ValueError(f"{request.fixturename} did not yield a value") from None
+            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)
+            request.addfinalizer(finalizer)
+        else:
+            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)
+>           fixture_result = fixturefunc(**kwargs)
+
+C:\Python311\Lib\site-packages\_pytest\fixtures.py:902: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+the_robot = <athena.athena object at 0x00000161F156E8D0>
+
+    @then("the loadState is within the cargo capacity of the model")
+    def loadStateWithinTolerance(the_robot):
+>       assert the_robot.loadState == "NORMAL"
+E       AssertionError: assert 'OVERLOAD' == 'NORMAL'
+E         - NORMAL
+E         + OVERLOAD
+
+tests\test_matchspecsheet.py:56: AssertionError
+---------------------------- Captured stdout call -----------------------------
+loadweight: 500
+500
+_____________________________ test_specs[perseus] _____________________________
+
+fixturefunc = <function loadStateWithinTolerance at 0x00000161F12B9940>
+request = <FixtureRequest for <Function test_specs[perseus]>>
+kwargs = {'the_robot': <perseus.perseus object at 0x00000161F12FC310>}
+
+    def call_fixture_func(
+        fixturefunc: "_FixtureFunc[FixtureValue]", request: FixtureRequest, kwargs
+    ) -> FixtureValue:
+        if is_generator(fixturefunc):
+            fixturefunc = cast(
+                Callable[..., Generator[FixtureValue, None, None]], fixturefunc
+            )
+            generator = fixturefunc(**kwargs)
+            try:
+                fixture_result = next(generator)
+            except StopIteration:
+                raise ValueError(f"{request.fixturename} did not yield a value") from None
+            finalizer = functools.partial(_teardown_yield_fixture, fixturefunc, generator)
+            request.addfinalizer(finalizer)
+        else:
+            fixturefunc = cast(Callable[..., FixtureValue], fixturefunc)
+>           fixture_result = fixturefunc(**kwargs)
+
+C:\Python311\Lib\site-packages\_pytest\fixtures.py:902: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+the_robot = <perseus.perseus object at 0x00000161F12FC310>
+
+    @then("the loadState is within the cargo capacity of the model")
+    def loadStateWithinTolerance(the_robot):
+>       assert the_robot.loadState == "NORMAL"
+E       AssertionError: assert 'OVERLOAD' == 'NORMAL'
+E         - NORMAL
+E         + OVERLOAD
+
+tests\test_matchspecsheet.py:56: AssertionError
+---------------------------- Captured stdout call -----------------------------
+loadweight: 700
+700
+=========================== short test summary info ===========================
+FAILED tests/test_matchspecsheet.py::test_specs[athena] - AssertionError: ass...
+FAILED tests/test_matchspecsheet.py::test_specs[perseus] - AssertionError: as...
+======================== 2 failed, 25 passed in 0.85s =========================

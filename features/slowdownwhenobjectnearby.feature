@@ -5,7 +5,7 @@ by 1 m/s with a zero bound.
 Background:
 	Given the near field sensor detects an object
 
-@factoryfloor @data-driven @datafile_speeds.xlsx
+@factoryfloor
 Scenario Outline: Robot detects object while in motion
 	Given the robot is traveling at <initialSpeed>m/s
 	When motion evaluation fires
