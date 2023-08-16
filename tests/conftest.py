@@ -15,7 +15,7 @@ from pytest_bdd import scenario, given, when, then, parsers
 @pytest.fixture
 def spec_sheet(request):
     dir, null = os.path.split(str(request.path))
-    fileName = dir + "\\resources\\robots.xlsx"
+    fileName = dir + "/resources/robots.xlsx"
 
     return pd.read_excel(io=fileName, sheet_name="data")
 
