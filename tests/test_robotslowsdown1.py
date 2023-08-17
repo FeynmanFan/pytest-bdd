@@ -36,4 +36,4 @@ def robotMotionFired(theNearFieldSensor, the_robot):
 
 @then(parsers.cfparse("speed should be {finalSpeed: d}m/s"))
 def robotSpeedSlower(the_robot, finalSpeed):
-	assert(the_robot.velocity.speed == finalSpeed)
+	assert(the_robot.velocity.speed == finalSpeed, "Robot slows down by 1m/s")
